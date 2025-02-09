@@ -1,0 +1,8 @@
+--- 
+- 
+  become: true
+  hosts: all
+  tasks: 
+    - 
+      name: "create docker container"
+      shell: "docker run -d --name b1_container -p 1234:8080 jayanth197/b1_image"
